@@ -1,0 +1,18 @@
+.container{
+    width: 100%;
+    border-right: 30px solid #3F1E08;
+    border-left: 30px solid #3F1E08;
+    
+}
+
+.main{
+    max-width: 1920px;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.nobuddy{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+}

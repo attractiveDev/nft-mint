@@ -1,0 +1,41 @@
+
+
+
+.main{
+  width:90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 90%; */
+  margin: auto;
+}
+
+
+.section img{
+  width: 40%;
+}
+
+.crypto{
+  display:flex;
+  align-items: center;
+  width: 96%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.crypto img{
+  width: 30%;
+}
+
+@media screen and (max-width: 768px){
+  .section{
+    flex-direction: column;
+  }
+}

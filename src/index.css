@@ -1,0 +1,20 @@
+body{
+  margin: 0px;
+  background-image: url(./assets/Chalkboard.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Love Ya Like A Sister' !important;
+  
+  font-style: normal !important;
+  transition-delay: 0.5s;
+}
+
+
+
+

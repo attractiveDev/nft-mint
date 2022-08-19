@@ -1,0 +1,30 @@
+
+
+
+.main{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction:  column;
+}
+.section{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@media screen and ( max-width: 1050px ) {
+  .section{
+    flex-direction: column;
+    width: 95%;
+
+  }
+  .note{
+    width: 100%;
+    min-width: 320px;
+  }
+}

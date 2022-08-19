@@ -1,0 +1,83 @@
+
+
+
+.header_container{
+    background-image: url(../../assets/MainShade.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    border-bottom: 5px solid #C6FF00;
+}
+.header{
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* .header img{ */
+    /* padding: 0px 20px; */
+    /* padding: 0px 10px 0px 10px; */
+    /* padding-top: -10px; */
+/* } */
+
+.header a{
+    font-family: 'Carter One' !important;
+    font-size: 48px;
+    font-weight: 400;
+    color: #C6FF00;
+    line-height: 74px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    /* text-decoration: #C6FF00; */
+}
+.visible a{
+    font-family: 'Carter One' !important;
+    color: #C6FF00;
+}
+
+.menubtn{
+    display: none;
+    background: #C6FF00 !important;
+    border-color: #C6FF00;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .header a{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        width: 0px;
+        height: 100px;
+    }
+    .header img{
+        display: none;
+    }
+    .header a{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .menubtn{
+        display: block !important;
+        margin: auto !important;
+    }
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+}
+
+
+

@@ -1,0 +1,9 @@
+{
+  "name": "Cronos Mainnet Beta",
+  "chain_id": "25",
+  "write_rpc": "https://evm.cronos.org/",
+  "read_rpc": "https://gateway.nebkas.ro/",
+  "symbol": "CRO",
+  "explorer": "https://cronoscan.com/",
+  "mint_contract": "0xf39363ABC3434C600e731068Fb8D25d4D8b2B668"
+}
