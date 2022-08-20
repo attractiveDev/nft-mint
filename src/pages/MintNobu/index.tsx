@@ -1,7 +1,7 @@
 
 
 import { useState, useEffect } from 'react';
-import { Box, Typography, IconButton, Stack, Slider  } from '@mui/material'
+import { Box, Typography, IconButton, Stack, Slider, Button  } from '@mui/material'
 import {styled} from '@mui/material/styles';
 
 import WalletConnect from '../../components/WalletButton/WalletButton';
@@ -50,7 +50,22 @@ const PrettoSlider = styled(Slider)({
   },
 });
 
-
+const MintButton  = styled(Button)({
+  background: '#94FF66',
+  color:'black',
+  fontSize:'30px',
+  fontWeight: 600,
+  padding:'2px 25px',
+  // height: '100px',
+  // padding:'10px 20px',
+  maxWidth:'200px',
+  margin:' 0 auto',
+  marginTop:'20px',
+  '&:hover':{
+    background:'yellow',
+    color:'tomato'
+  }
+})
 
 const MintNobu = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -97,11 +112,11 @@ const MintNobu = () => {
               }
               {
                 account &&
-                  <Box>
+                  <Stack direction='column'>
                       <PrettoSlider
                         value={value}
                         onChange={handleSlider}
-                        sx={{marginTop:'25px'}}
+                        sx={{marginTop:'25px', width:'300px'}}
                         min={1}
                         max={10}
                         step={1}
@@ -109,8 +124,9 @@ const MintNobu = () => {
                         aria-label="pretto slider"
                         defaultValue={1}
                     />
-                    <img style={{width:"60%"}} src='./assets/img/MintNft/Mint Button.png' alt='mintbutton' onClick={fetchData}/>
-                  </Box>
+                      <MintButton onClick={fetchData}>Mint</MintButton>
+                      {/* <img style={{width:"60%"}} src='./assets/img/MintNft/Mint Button.png' alt='mintbutton' onClick={fetchData}/> */}
+                  </Stack>
                   
               }
               
